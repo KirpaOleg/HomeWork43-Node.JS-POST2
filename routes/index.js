@@ -17,7 +17,7 @@ const getcountryProperties = async(url) => {
     // console.log('TEST2 >>>>', name);
     return{name, population, languages, currencies, flag,}
   });
-  console.log('TEST3 >>>>', getcountryProperties);
+  console.log('TEST3 >>>>', countryProperties);
 }
 
 const countryPropertiesHTML = async(element, res) => {
@@ -42,8 +42,8 @@ router.get('/', (req, res, next) => {
 router.post('/', upload.none(), async(req, res, next) => {
   const URL = `https://restcountries.com/v3.1/region/${req.body.region}`;  
   // console.log('TEST0 >>>>', URL);
-  
-    countryPropertiesHTML(res)
+  const countryArr = await getcountryProperties(URL);
+  console.log('TEST4 >>>>', countryArr);
  
 });
 

@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+div {
+  font-size: 20px;
+}
+.column-one {
+  width: 120px;
+  border: 2px solid red;
+}
+.column-two {
+  width: 80%;
+  border: 2px solid red;
+}
+form {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.flag {
+  width: 100px;
+}

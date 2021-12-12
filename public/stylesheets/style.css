@@ -9,19 +9,52 @@ div {
   font-size: 20px;
 }
 .column-one {
-  width: 120px;
+
+  padding: 10px;
   border: 2px solid red;
+  vertical-align: baseline;
 }
 .column-two {
-  width: 80%;
+  width: 1000px;
   border: 2px solid red;
+  padding: 10px;
+}
+label {
+  width: 120px;
+}
+img {
+  width: 150px;
 }
 form {
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  align-items: flex-start;
 }
 .flag {
-  width: 100px;
+  padding-left: 300px;
+}
+.counrty {
+  width: 460px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid black;
+}
+.card {
+  display: flex;
+  height: 360px;
+}
+.cat-card{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 600px;
+  border: 2px solid black;
+  overflow-y: scroll;
+}
+.cat {
+  text-align: center;
+  padding: 10px;
 }
